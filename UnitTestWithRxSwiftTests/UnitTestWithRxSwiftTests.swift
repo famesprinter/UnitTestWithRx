@@ -1,15 +1,10 @@
-//
-//  UnitTestWithRxSwiftTests.swift
-//  UnitTestWithRxSwiftTests
-//
-//  Created by Kittitat Rogphotong on 12/2/2561 BE.
-//  Copyright © 2561 SprinteRz. All rights reserved.
-//
-
 import XCTest
+import RxSwift
 @testable import UnitTestWithRxSwift
 
 class UnitTestWithRxSwiftTests: XCTestCase {
+    // Variable
+    var isVisible: Variable<Bool> = Variable(false)
     
     override func setUp() {
         super.setUp()
@@ -21,16 +16,7 @@ class UnitTestWithRxSwiftTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testVariableBool() {
+        
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }

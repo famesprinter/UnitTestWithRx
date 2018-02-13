@@ -8,6 +8,7 @@ target 'UnitTestWithRxSwift' do
   # Pods for UnitTestWithRxSwift
   pod 'RxSwift',    '~> 4.0'
   pod 'RxCocoa',    '~> 4.0'
+  pod 'Hue', '~> 2.0'
 
   target 'UnitTestWithRxSwiftTests' do
     # Pods for testing

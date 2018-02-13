@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		964E437C97E119FF5C89E3C2 /* Pods_UnitTestWithRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E1AA1D544E37068E1B820AB /* Pods_UnitTestWithRxSwift.framework */; };
 		F65A2A11E05D277168EF900C /* Pods_UnitTestWithRxSwift_UnitTestWithRxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7939692E00CB981F58FE8CE5 /* Pods_UnitTestWithRxSwift_UnitTestWithRxSwiftTests.framework */; };
+		FBC993E22032C1210086343B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC993E12032C1210086343B /* ViewModel.swift */; };
+		FBC993E32032C1210086343B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC993E12032C1210086343B /* ViewModel.swift */; };
 		FBE842EF203193CE00F34940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE842EE203193CE00F34940 /* AppDelegate.swift */; };
 		FBE842F1203193CE00F34940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE842F0203193CE00F34940 /* ViewController.swift */; };
 		FBE842F4203193CE00F34940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE842F2203193CE00F34940 /* Main.storyboard */; };
@@ -34,6 +36,7 @@
 		7939692E00CB981F58FE8CE5 /* Pods_UnitTestWithRxSwift_UnitTestWithRxSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestWithRxSwift_UnitTestWithRxSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C354EDC80B12F3CF9B04006 /* Pods-UnitTestWithRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestWithRxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestWithRxSwift/Pods-UnitTestWithRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DC1C94A92521FE277BD97426 /* Pods-UnitTestWithRxSwift-UnitTestWithRxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestWithRxSwift-UnitTestWithRxSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTestWithRxSwift-UnitTestWithRxSwiftTests/Pods-UnitTestWithRxSwift-UnitTestWithRxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		FBC993E12032C1210086343B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FBE842EB203193CE00F34940 /* UnitTestWithRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestWithRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE842EE203193CE00F34940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBE842F0203193CE00F34940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 			children = (
 				FBE842EE203193CE00F34940 /* AppDelegate.swift */,
 				FBE842F0203193CE00F34940 /* ViewController.swift */,
+				FBC993E12032C1210086343B /* ViewModel.swift */,
 				FBE842F2203193CE00F34940 /* Main.storyboard */,
 				FBE842F5203193CE00F34940 /* Assets.xcassets */,
 				FBE842F7203193CE00F34940 /* LaunchScreen.storyboard */,
@@ -255,6 +259,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTestWithRxSwift-UnitTestWithRxSwiftTests/Pods-UnitTestWithRxSwift-UnitTestWithRxSwiftTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
@@ -262,6 +267,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
@@ -279,11 +285,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UnitTestWithRxSwift/Pods-UnitTestWithRxSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
@@ -351,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE842F1203193CE00F34940 /* ViewController.swift in Sources */,
+				FBC993E22032C1210086343B /* ViewModel.swift in Sources */,
 				FBE842EF203193CE00F34940 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC993E32032C1210086343B /* ViewModel.swift in Sources */,
 				FBE84304203193CE00F34940 /* UnitTestWithRxSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
